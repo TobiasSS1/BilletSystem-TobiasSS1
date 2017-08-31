@@ -18,12 +18,24 @@ namespace BilLibrary
 
 		public override int Pris()
 		{
-			return 0;
+			return 300;
 		}
 
 		public override string Køretøj()
 		{
-			return "fuck dig";
+			return "Mercedes";
 		}
+
+		public int weekendrabat()
+		{
+			//kan ikke konverter til datetime
+			//if ( DayOfWeek.Saturday == DateTime.Today || DayOfWeek.Sunday == DateTime.Today)
+			//{
+
+			//}
+			return 200; 
+		}
+
+		
 	}
 }
