@@ -28,9 +28,14 @@ namespace BilLibrary.Tests
 		}
 
 		[TestMethod()]
-		public void BaseBilTest()
+		public void RabatTest()
 		{
-			Assert.Fail();
+			var MC = new MC();
+			double Pris = MC.Pris();
+			double Rabat = MC.Rabat(Pris);
+			Assert.AreEqual(100, Rabat);
 		}
+
+
 	}
 }

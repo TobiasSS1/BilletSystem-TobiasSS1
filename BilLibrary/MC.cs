@@ -26,5 +26,11 @@ namespace BilLibrary
 			return "MC";
 		}
 
+		public virtual double Rabat(double pris)
+		{
+			double rabatpris = pris * 0.80;
+			return rabatpris;
+		}
+
 	}
 }

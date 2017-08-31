@@ -20,7 +20,13 @@ namespace BilLibrary
 
 		public virtual string Køretøj()
 		{
-			return "fuck dig";
+			return "Placeholder";
+		}
+
+		public double rabat(double pris)
+		{
+			double rabatpris = pris * 0.80;
+			return rabatpris;
 		}
 
 		//konsstruktør
