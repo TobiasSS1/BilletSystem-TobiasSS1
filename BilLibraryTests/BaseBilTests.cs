@@ -24,7 +24,7 @@ namespace BilLibrary.Tests
 		{
 			var MC = new MC();
 			string køretøj = MC.Køretøj();
-			Assert.AreEqual("MC", køretøj);
+			Assert.AreEqual("Øresund MC", køretøj);
 		}
 
 		[TestMethod()]

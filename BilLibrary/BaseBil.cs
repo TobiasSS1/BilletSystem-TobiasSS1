@@ -11,6 +11,8 @@ namespace BilLibrary
 		//parameter
 		public abstract string Nummerplade { get; set; }
 		public abstract DateTime Dato { get; set; }
+		public abstract Boolean Brobizz { get; set; }
+
 
 		//metoder
 		public virtual int Pris()

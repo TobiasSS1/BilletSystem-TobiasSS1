@@ -10,6 +10,7 @@ namespace BilLibrary
 	{
 		public override string Nummerplade { get; set; }
 		public override DateTime Dato { get; set; }
+		public override Boolean Brobizz { get; set; }
 
 		public MC()
 		{
@@ -23,13 +24,20 @@ namespace BilLibrary
 
 		public override string Køretøj()
 		{
-			return "MC";
+			return "Øresund MC";
 		}
 
 		public virtual double Rabat(double pris)
 		{
-			double rabatpris = pris * 0.80;
-			return rabatpris;
+			if (Brobizz == true)
+			{
+				return 73;
+			}
+			else
+			{
+				double rabatpris = pris * 0.80;
+				return rabatpris;
+			}
 		}
 
 	}

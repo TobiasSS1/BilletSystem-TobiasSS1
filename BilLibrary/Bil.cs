@@ -10,6 +10,9 @@ namespace BilLibrary
 	{
 		public override string Nummerplade { get; set; }
 		public override DateTime Dato { get; set; }
+		public override Boolean Brobizz { get; set; }
+
+
 
 		public Bil()
 		{
@@ -23,7 +26,20 @@ namespace BilLibrary
 
 		public override string Køretøj()
 		{
-			return "Mercedes";
+			return "Øresund Bil";
+		}
+
+		public virtual double Rabat(double pris)
+		{
+			if (Brobizz == true)
+			{
+				return 161;
+			}
+			else
+			{
+				double rabatpris = pris * 0.80;
+				return rabatpris;
+			}
 		}
 
 		public int weekendrabat()
