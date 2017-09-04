@@ -42,14 +42,19 @@ namespace BilLibrary
 			}
 		}
 
-		public int weekendrabat()
+		public double weekendrabat(double pris)
 		{
-			//kan ikke konverter til datetime
-			//if ( DayOfWeek.Saturday == DateTime.Today || DayOfWeek.Sunday == DateTime.Today)
-			//{
-
-			//}
-			return 200; 
+		
+			if ((int)DayOfWeek.Saturday == DateTime.Today.Day || (int)DayOfWeek.Sunday == DateTime.Today.Day)
+			{
+				double rabatpris = pris * 0.60;
+				return rabatpris;
+			}
+			else
+			{
+				return pris;
+			}
+			 
 		}
 
 		

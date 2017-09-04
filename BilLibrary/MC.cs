@@ -40,5 +40,20 @@ namespace BilLibrary
 			}
 		}
 
+		public double weekendrabat(double pris)
+		{
+
+			if ((int)DayOfWeek.Saturday == DateTime.Today.Day || (int)DayOfWeek.Sunday == DateTime.Today.Day)
+			{
+				double rabatpris = pris * 0.60;
+				return rabatpris;
+			}
+			else
+			{
+				return pris;
+			}
+
+		}
+
 	}
 }
