@@ -15,15 +15,9 @@ namespace BilLibrary
 
 
 		//metoder
-		public virtual int Pris()
-		{
-			return 0;
-		}
+		public abstract int Pris();
 
-		public virtual string Køretøj()
-		{
-			return "Placeholder";
-		}
+		public abstract string Køretøj();
 
 		public double rabat(double pris)
 		{

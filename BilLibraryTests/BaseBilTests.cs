@@ -35,7 +35,5 @@ namespace BilLibrary.Tests
 			double Rabat = MC.Rabat(Pris);
 			Assert.AreEqual(100, Rabat);
 		}
-
-
 	}
 }

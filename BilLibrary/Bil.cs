@@ -8,26 +8,48 @@ namespace BilLibrary
 {
 	public class Bil : BaseBil
 	{
+
+		///En string til at skrive en nummerplade 
 		public override string Nummerplade { get; set; }
+
+		/// <summary>
+		/// En DateTime til at skrive en dato
+		/// </summary>
 		public override DateTime Dato { get; set; }
+
+		///En boolean til at tjekke op på at man har en brobizz
 		public override Boolean Brobizz { get; set; }
-
-
 
 		public Bil()
 		{
 
 		}
 
+		/// <summary>
+		/// Sætter pris på bil
+		/// </summary>
+		/// <returns></returns>
+
 		public override int Pris()
 		{
 			return 300;
 		}
 
+		/// <summary>
+		/// Returnere hvilke køretøj
+		/// </summary>
+		/// <returns></returns>
+
 		public override string Køretøj()
 		{
 			return "Øresund Bil";
 		}
+
+		/// <summary>
+		/// Sætter rabat på bil
+		/// </summary>
+		/// <param name="pris"></param>
+		/// <returns></returns>
 
 		public virtual double Rabat(double pris)
 		{
@@ -41,6 +63,12 @@ namespace BilLibrary
 				return rabatpris;
 			}
 		}
+		
+		/// <summary>
+		/// Metode til weekendrabat
+		/// </summary>
+		/// <param name="pris"></param>
+		/// <returns></returns>
 
 		public double weekendrabat(double pris)
 		{
