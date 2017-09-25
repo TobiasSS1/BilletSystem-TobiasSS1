@@ -36,6 +36,5 @@ namespace BilLibrary.Tests
 			Assert.AreEqual(100, Rabat);
 		}
 
-
 	}
 }
